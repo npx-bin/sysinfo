@@ -1,0 +1,16 @@
+{
+  "name": "@kcak11/sysinfo",
+  "version": "1.0.0",
+  "description": "System Information",
+  "main": "./index.js",
+  "bin": {
+    "sysinfo": "./exec/index.js"
+  },
+  "keywords": [
+    "System Info",
+    "Information",
+    "Meta Data"
+  ],
+  "author": "K.C.Ashish Kumar",
+  "license": "MIT"
+}
