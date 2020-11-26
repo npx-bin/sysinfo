@@ -1,6 +1,6 @@
 {
   "name": "@kcak11/sysinfo",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "System Information",
   "main": "./exec/index.js",
   "bin": {

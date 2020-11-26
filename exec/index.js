@@ -9,8 +9,15 @@ var text = "";
 for (var key in os) {
     if (typeof os[key] === "function") {
         try {
-            var outputInfo = JSON.stringify(os[key]());
-            var outputText = JSON.stringify(os[key](), null, 4);
+            var result = os[key]();
+            var outputInfo, outputText;
+            if (typeof result === "string") {
+                outputInfo = result;
+                outputText = result;
+            } else {
+                outputInfo = JSON.stringify(result);
+                outputText = JSON.stringify(result, null, 4);
+            }
             info[key] = outputInfo;
             text += key + ":  " + outputText + "\n\n";
         } catch (exjs) { }
